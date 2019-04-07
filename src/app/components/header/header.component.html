@@ -1,0 +1,21 @@
+<div class = "site-title">
+  <h1>Олімпійський рух Вінничини</h1>
+</div>
+<nav>
+  <ul class="container">
+    <li>
+      <div><img src="assets/img/logo.png"></div>
+    </li>
+    <li><div><a routerLink = "">Головна</a></div></li>
+    <li><div><a routerLink = "history">Історія спорту Вінничини</a></div></li>
+    <li><div><a routerLink = "sports">Види спорту</a></div></li>
+    <li>
+      <div class="header-dropdown">
+          <a >Олімпійці</a>
+          <ul class="drop-nav">
+            <li  *ngFor="let p of people"  ><a [routerLink]="['/person', p.route]">{{p.name}}</a></li>
+          </ul>
+      </div>
+    </li>
+  </ul>
+</nav>

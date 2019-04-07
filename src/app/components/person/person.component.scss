@@ -1,0 +1,26 @@
+.bk {
+    background-image: url('/assets/img/background.jpeg') !important;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+}
+.container {
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba($color: #efefef, $alpha: 0.7);
+    color:  rgb(105, 12, 12);;
+}
+.photo {
+    padding-left: 30px;
+    max-height: 300px;
+}
+.content {
+    padding-top:20px; 
+}
+@media all and (max-width: 600px) {
+    .container {
+       padding: 30px;
+    }
+}

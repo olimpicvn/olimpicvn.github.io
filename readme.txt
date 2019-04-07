@@ -1,0 +1,1 @@
+для запуска нужен angular-cli version 6.2.3 , запуск командой ng-serve --open
