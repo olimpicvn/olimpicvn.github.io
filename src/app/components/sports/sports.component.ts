@@ -241,7 +241,6 @@ export class SportsComponent implements OnInit, AfterViewInit{
     console.log(item);
     var modal = document.getElementById('modal');
     var modalText = document.getElementById('modalBody');
-    
     this.modalNames = item.people;
     this.target = item.name;
     modal.style.display = "block";

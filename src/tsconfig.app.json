@@ -2,7 +2,8 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "types": []
+    "types": [ "node", "rss-parser"],
+    "typeRoots": [ "../node_modules/@types" ]
   },
   "exclude": [
     "test.ts",

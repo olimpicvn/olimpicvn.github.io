@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HistoryComponent } from './components/history/history.component';
 import { SportsComponent } from './components/sports/sports.component';
 import { PersonComponent } from './components/person/person.component';
+import { HttpModule } from '@angular/http';
 //import { SharedBootstrapModule } from './shared-bootstrap.module';  
  
 @NgModule({
@@ -25,7 +26,8 @@ import { PersonComponent } from './components/person/person.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpModule
   //  SharedBootstrapModule
     ],
   providers: [],
