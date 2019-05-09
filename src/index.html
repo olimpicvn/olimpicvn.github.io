@@ -6,10 +6,21 @@
   <base href="/">
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
-     
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+  <script src="assets/markitup/jquery.markitup.js"></script>
+  <script src="assets/markitup/sets/default/set.js"></script>
+  <link rel="stylesheet" href="assets/markitup/skins/simple/style.css" />
+  <link rel="stylesheet" href="assets/markitup/sets/default/style.css" />
 </head>
 <body>
+    <script>
+        $(document).ready(function() {
+      
+        $('#markItUp').markItUp(mySettings);
+        
+        });
+    </script>
   <script>document.write('<base href="' + document.location + '" />');</script>
   <app-root></app-root>
 </body>

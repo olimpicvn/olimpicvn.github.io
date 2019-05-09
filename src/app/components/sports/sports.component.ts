@@ -231,14 +231,14 @@ export class SportsComponent implements OnInit, AfterViewInit{
       for(let j =0 ;j < this.sportsImages[i].people.length; ++j){
         let that = this;
         this.http.get('assets/peoples/' + this.sportsImages[i].people[j]).subscribe(data => {
-          console.log(that.sportsImages);
+         // console.log(that.sportsImages);
           that.map.set(that.sportsImages[i].people[j], data["name"]);
         })
       }
     }
   }
   openMadal(item){
-    console.log(item);
+    //console.log(item);
     var modal = document.getElementById('modal');
     var modalText = document.getElementById('modalBody');
     this.modalNames = item.people;
